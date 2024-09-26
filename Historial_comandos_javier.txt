@@ -1,0 +1,17 @@
+sudo apt-get update
+sudo apt-get install dkms
+sudo ./VBoxLinuxAdditions.run 
+exit
+git -v
+git clone https://github.com/upszot/UTN-FRA_SO_onBording.git
+sudo apt install git
+git clone https://github.com/upszot/UTN-FRA_SO_onBording.git
+cd UTN-FRA_SO_onBording/
+code .
+echo "# TP_AySO" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Janegro09/TP_AySO.git
+git push -u origin main
